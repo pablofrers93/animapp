@@ -19,7 +19,9 @@ import { AnimappService } from './animapp.service';
     FormsModule
   ],
   exports: [
-    PaginaInicioComponent
+    PaginaInicioComponent,
+    BusquedaComponent,
+    ResultadosComponent
   ],
   providers: [
     AnimappService

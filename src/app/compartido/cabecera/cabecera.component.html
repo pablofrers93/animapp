@@ -1,3 +1,12 @@
+<mat-toolbar color="primary">
+    <button mat-button [matMenuTriggerFor]="belowMenu">Menu</button>
+    <mat-menu #belowMenu="matMenu" yPosition="below">
+        <button mat-menu-item routerLink=""><mat-icon>home</mat-icon>Home</button>
+        <button mat-menu-item routerLink="sugerencias"><mat-icon>assistant</mat-icon>Sugerencias</button>
+        <button mat-menu-item routerLink="contacto"><mat-icon>person</mat-icon>Contacto</button>
+    </mat-menu>
+</mat-toolbar>
+
 <header class="header">
     <div class="text-center p-5">
         <h1 class="heading-primary">

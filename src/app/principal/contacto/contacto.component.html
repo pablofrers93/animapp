@@ -1,0 +1,21 @@
+<div class="formulario-container">
+    <h2>Contacto</h2>
+    <form (ngSubmit)="enviarFormulario()">
+      <mat-form-field class="ancho-completo">
+        <mat-label>Nombre</mat-label>
+        <input matInput [(ngModel)]="nombre" name="nombre" required>
+      </mat-form-field>
+  
+      <mat-form-field class="ancho-completo">
+        <mat-label>Correo Electrónico</mat-label>
+        <input matInput [(ngModel)]="correo" name="correo" type="email" required>
+      </mat-form-field>
+  
+      <mat-form-field class="ancho-completo">
+        <mat-label>Mensaje</mat-label>
+        <textarea matInput [(ngModel)]="mensaje" name="mensaje" rows="5" required></textarea>
+      </mat-form-field>
+  
+      <button mat-raised-button color="primary" type="submit">Enviar Consulta</button>
+    </form>
+  </div>
